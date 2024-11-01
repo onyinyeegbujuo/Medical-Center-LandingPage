@@ -1,0 +1,751 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+:root{
+    --secondary: #fd8a5b;
+    --primary:#1fccce;
+    --compound:#6e6e6e;
+    --heading:#3c3d3d;
+}
+/* .header{
+    min-height: 90vh;
+} */
+/* navigation start */
+.nav{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.navBrand{
+
+}
+.brandName{
+
+}
+.navMenu{
+   
+}
+
+.navList{
+    display: flex;
+    list-style-type: none;
+    
+}
+.listItems{
+    margin-left: 23px;
+}
+.listAnchor{
+    text-decoration: none;
+    color: #6e6e6e;
+    font-weight: 600;
+}
+.listAnchor:active{
+    color: var(--primary);
+}
+.nav-right{
+   
+}
+.GetInTouch{
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    border-radius: 10px;
+}
+
+.navbarIcon{
+    position: absolute;
+    right: 30px;
+    display: none;
+}
+/* navigation end */
+/* Reusable components */
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.btnOrange{
+    background-color: var(--secondary);
+}
+.btnBlue{
+    background-color: var(--primary);
+     
+}
+.Center{
+    text-align: center;
+}
+
+/* reusable component ends */
+/* hero section start */
+.sectionHero{
+    padding: 100px 0;
+    background-color: #f4f4f4;
+}
+.heroContainer{
+    display: flex;
+}
+.heroTextbox{
+    width: 50%;
+}
+.herotextboxminiHeading{
+    color: var(--heading);
+    font-size: 25px;
+    letter-spacing: 10px;
+    padding-bottom: 30px;
+}
+.herotextboxmainheading{
+    font-size: 55px;
+    padding-bottom: 30px;
+    background: linear-gradient(to right, var(--heading), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.herotextboxpara{
+    color: var(--compound);
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+.textboxAnchor{
+    text-decoration: none;
+     
+}
+.heroimageContainer{
+    width: 50%;
+    margin-left: 45px;
+}
+.heroimageHolder{
+    width: 400px;
+    height: 400px;
+    padding-top: 40px;
+    border-radius: 100%;
+    background: linear-gradient(to right, var(--primary),var(--heading));
+    overflow: hidden;
+}
+.heroImage{
+    width: 100%;
+} 
+/* section services start */
+.sectionServices{
+    padding: 100px 0;
+}
+.servicesContainer{
+    box-shadow: 2px 2px 3px 4px #dcdbdb;
+    padding: 70px;
+}
+.servicesminiHeading{
+    color: var(--primary);
+    font-size: 25px;
+    text-align: center;
+}
+.servicesmainHeading{
+    padding-top: 40px;
+    color: var(--heading);
+    font-size: 40px;
+    text-align: center;
+}
+.servicesrowContainer{
+    display: flex;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.servicesRow{
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid var(--primary);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.servicesrowiconHolder{
+    margin-bottom: 40px; 
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #f4f4f4;
+    align-content: center;
+    text-align: center;
+}
+.servicesrowIcon{
+    font-size: 30px;
+   color: var(--primary);
+}
+.servicesrowTextbox{
+     text-align: center;
+}
+.servicesrowtextboxHeading{
+    color: var(--heading);
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.servicesrowtextboxPara{
+    font-size: 20px;
+    color: var(--compound);
+    line-height: 30px;
+}
+/* section qualification start */
+.sectionQualifications{
+    background-color: #f4f4f4;;
+}
+.qualificationsContainer{
+    padding: 150px 0;
+    display: flex;
+    gap: 80px;
+}
+.qualificationimageholderContainer{
+    /* position: relative; */
+    width: 50%;
+}
+ 
+.qualificationsimageHolder{
+    position: relative;
+    width: 80%;
+    background-image: linear-gradient(to right, var(--heading), var(--primary));
+    border-bottom-left-radius: 75px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.qualificationsImage{
+     width:100% ;
+     position: relative;
+     bottom: 70px;
+     left: 50px;
+    border-bottom-left-radius: 150px;
+    border-top-right-radius:150px ;
+    border-bottom-right-radius: 90px;
+    border-top-left-radius:90px ;
+}
+.qualificationsTextbox{
+     width: 50%;
+}
+.qualificationsTextboxminiHeading{
+    color: var(--primary);
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.qualificationsTextboxmainHeading{
+    color: var(--heading);
+    font-size: 47px;
+    padding-bottom: 25px;
+}
+.qualificationsTextboxPara{
+    color: var(--compound);
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+.qualificationsTextboxRatios{
+    display: flex;
+    gap: 40px;
+}
+.qualificationsTextboxratioBoxes{
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 3px;
+}
+.ratioboxesHeading{
+    color: var(--primary);
+    padding-bottom: 10px;
+}
+.ratioboxesPara{
+    color: var(--heading);
+    font-size: 16px;
+    font-weight: 540;
+}
+
+/* section doctors start */
+.sectionourDoctors{
+    padding: 100px 0;
+}
+.ourdoctorsContainer{
+
+}
+.ourdoctorsminiHeading{
+    color: var(--primary);
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.ourdoctorsmainHeading{
+    color: var(--heading);
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.ourdoctorscolumnContainer{
+    display: flex;
+    margin: 70px 0;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.ourdoctorscolumnHolder{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 23%;
+    flex-shrink: 0;
+    padding: 30px 20px;
+    border-radius: 15px;
+    /* justify-content: center;
+    align-items: center; */
+    box-shadow: 2px 2px 2px 2px #f4f3f3;
+     
+}
+.doctorsimgContainer{
+    /* width: 50%; */
+    
+}
+.doctorsimgHolder{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.doctorsImage{
+    width: 100%;
+    height: 100%;
+     
+}
+.ourdoctorsTextbox{
+    
+    /* width: 50%; */
+}
+.ourdoctorsName{
+    color: var(--heading);
+    font-size: 16px;
+    padding-top: 20px;
+}
+.ourdoctorsRole{
+    color: var(--primary);
+    padding: 10px 0;
+}
+.doctorsStar{
+    color: var(--secondary);
+    padding-bottom: 20px;
+}
+/* section testimonial start */
+.sectionTestimonial{
+    padding: 100px 0;
+    background-color: #f4f4f4;
+}
+.testimonialcontainer{
+
+}
+.testimonialName{
+    text-align: center;
+    color: var(--primary);
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.testimonialHeading{
+    text-align: center;
+    color: var(--heading);
+    font-size: 30px;
+}
+.testimonialcolContainer{
+    display: flex;
+    margin: 70px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.testimonialcolWrap{
+    background-color: #fff;
+    display: flex;
+    flex-basis: 45%;
+    flex-shrink: 0;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+.testimonialimgWrap{
+    
+}
+.testimonialimgHolder{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    /* object-fit: cover; */
+    overflow: hidden;
+    
+}
+.testimonialImg{
+    width: 100%;
+    height: 100%;
+}
+.testimonialTextbox{
+    margin-left: 15px;
+}
+.testimonialdocName{
+    font-size: 17px;
+    color: var(--heading);
+    padding-bottom: 10px;
+}
+.doctorsSpecialized{
+    color: var(--primary);
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.testimonialStar{
+    color: var(--secondary);
+    padding-bottom: 15px;
+}
+.testimonialPara{
+    color: var(--compound);
+    font-size: 16px;
+    line-height: 25px;
+}
+/* section contact start */
+.contactUs{
+    padding: 100px 0;
+    
+    
+}
+.contactUsContainer{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-image:linear-gradient(rgba(0,0,0,0.54),rgba(0,0,0,0.5)), url(./../Images/jafar-ahmed-E285pJbC4uE-unsplash.jpg);
+    background-size: cover;
+    object-fit: cover;
+    
+    
+}
+.contactusHolder{
+    display: flex;
+    padding: 80px;
+}
+.contactusTextbox{
+
+}
+.contactusHeading1{
+    color: var(--primary);
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+.contactusHeading2{
+    color: #fff;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+.contactusPara{
+    color: #fff;
+    font-size: 18px;
+}
+.contactusLink{
+    padding-top: 40px;
+}
+/* section blog start */
+.sectionourBlog{
+    padding: 100px 0;
+}
+.ourblogContainer{
+
+}
+.blogName{
+    color: var(--primary);
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.blogHeading{
+    font-size: 30px;
+    color: var(--heading);
+    /* padding-bottom: 40px; */
+}
+.blogcolContainer{
+    display: flex;
+    margin: 70px 0;
+    flex-wrap: wrap;
+    gap: 33px;
+    /* justify-content: center; */
+
+}
+.blogcolHolder{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 31%;
+    flex-shrink: 0;
+    /* padding: 30px 20px; */
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #f4f3f3;
+}
+.blogimageHolder{
+    width: 100%;
+    border-radius: 9px;
+    overflow: hidden;
+}
+.blogImage{
+    width: 100%;
+    border-radius: 9px;
+}
+.blogTextbox{
+    padding: 18px 18px;
+}
+.blogDate{
+    color: var(--compound);
+    padding-bottom: 10px;
+}
+.blogHeading{
+    font-size: 25px;
+    color: var(--heading);
+    padding-bottom: 10px;
+}
+.blogPara{
+    color: var(--compound);
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 15px;
+}
+.blogAnchor{
+     text-decoration: none;
+     color: var(--secondary);
+}
+.sectionFooter{
+    padding: 100px 0;
+    background-color: var(--heading);
+}
+.footerNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 35px;
+}
+.footerBrand{
+    display: flex;
+    gap: 20px;
+}
+.footernavImage{
+      
+}
+.footernavName{
+    font-size: 30px;
+    font-weight: 550;
+    color: #fff;
+}
+.footernavMenu{
+
+}
+.footernavList{
+    display: flex;
+    list-style-type: none;
+}
+.footernavListItems{
+    margin-left: 23px;
+}
+.footerlistAnchors{
+    text-decoration: none;
+    color: #fff;
+}
+ 
+.footersocialmediaHandle{
+    padding:30px 0;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.footersocialMedia{
+    list-style-type: none;
+    color: var(--primary);
+}
+.footerCopyright{
+    color: var(--primary);
+}
+
+
+/* media query */
+@media screen and (max-width:900px) {
+    .row{
+        max-width: 500px;
+        /* margin: 0 auto; */
+    }
+    .nav{
+        /* padding: 0 30px; */
+    }
+    .navBrand{
+        padding-left: 30px;
+    }
+    .navMenu{
+        display: none;
+    }
+    .listItems{
+        display: none;
+    }
+    .nav-right{
+        display: none;
+    }
+    .navbarIcon{
+        position: absolute;
+        right: 70px;
+        top: 38px;
+        display: block;
+    }
+    /* hero section */
+    .heroContainer{
+         flex-wrap: wrap;
+    }
+    .heroTextbox{
+        width: 100%;
+    }
+    .heroimageContainer{
+        width: 100%;
+    }
+    .heroTextbox{
+        margin-bottom: 60px;
+    }
+    .herotextboxpara{
+        padding-bottom: 45px;
+    }
+    /* services section */
+    .servicesrowContainer{
+        flex-wrap: wrap;
+    }
+    .servicesRow{
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    } 
+    .qualificationsContainer{
+        flex-wrap: wrap;
+    }
+    .qualificationimageholderContainer{
+        width: 100%;
+    }
+    .qualificationsTextbox{
+        width: 100%;
+        margin-top: 30px;
+    }
+    /* doctors section */
+    .ourdoctorscolumnContainer{
+        flex-wrap: wrap;
+    }
+    .ourdoctorscolumnHolder{
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    /* testimonial section */
+    .testimonialcolContainer{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .testimonialcolWrap{
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    .testimonialimgWrap{
+        margin-bottom: 30px;
+    }
+    /* contact us section */
+    .contactUsContainer{
+        flex-wrap: wrap;
+    }
+    /* section ourblog */
+    .blogcolContainer{
+        flex-wrap: wrap;
+    }
+    .footerBrand{
+        margin-bottom: 30px;
+    }
+    .blogcolHolder{
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    .footerNav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footernavList{
+        flex-direction: column;
+    }
+     
+}
+
+/* media query for phone */
+@media screen and (max-width:480px){
+    .row{
+        max-width: 330px;
+    }
+    .navBrand{
+        padding-left: 20px;
+    }
+    .navbarIcon{
+        right: 40px;
+        top: 32px;
+    }
+    /* hero section */
+    .heroimageHolder{
+        width: 300px;
+        height: 300px;
+    }
+    .herotextboxminiHeading{
+        font-size: 19px;
+    }
+    .herotextboxmainheading {
+        font-size: 35px;
+    }
+    /* service aection */
+    .servicesminiHeading{
+        font-size: 18px;
+    }
+    .servicesrowtextboxHeading{
+        font-size: 18px;
+    }
+    .servicesmainHeading {
+        font-size: 22px;
+    }
+    /* qualification section */
+    .qualificationsTextboxRatios{
+        flex-wrap: wrap;
+    }
+    .qualificationsTextboxratioBoxes{
+        flex-wrap: wrap;
+    }
+    .qualificationsTextboxminiHeading{
+        font-size: 20px;
+    }
+    .qualificationsTextboxmainHeading{
+        font-size: 30px;
+    }
+    /* ourDoctors section */
+    .ourdoctorsminiHeading {
+        font-size: 20px;
+    }
+    .ourdoctorsmainHeading{
+        font-size: 30px;
+    }
+    /* testimonial section */
+    .testimonialName{
+        font-size: 18px;
+    }
+    .testimonialHeading {
+        font-size: 24px;
+    }
+    /* footer section */
+    .footernavName{
+        font-size: 18px;
+    }
+     
+}
